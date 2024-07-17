@@ -3,7 +3,65 @@ body {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    background-color: #121212;
+    background-color: #111111;
     color: #ffffff;
+    max-width: 1440px;
+    margin: 0 auto;
 }
 
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 3.5rem;
+    border: 2px solid red;
+   
+    padding: 10px 0;
+}
+.nav-items{
+   
+    border-radius: 40px;
+    border: 2px solid red;
+    margin: 0;
+    padding: 0;
+}
+
+.nav-items li {
+    margin: 0 15px;
+    display: flex;
+    align-items: center;
+}
+.logo {
+    color: rgb(230, 83, 60);
+font-family: Inter;
+font-size: 36px;
+font-weight: 800;
+}
+nav ul {
+    list-style: none;
+    display: flex;
+    margin: 0;
+    padding: 0;
+}
+
+nav ul button{
+    border: 2px solid red;
+    padding: 8px 20px 8px 20px;
+    border-radius: 2.9rem;
+    Font-weight: 600;
+    Font-size: 18px;
+    color: #ffffff;
+    background-color: 
+    rgb(230, 83, 60);
+}
+.Service , .Contact{
+    margin:0 2.9rem;
+}
+nav ul li a {
+    color: #ffffff;
+    text-decoration: none;
+   
+    border-radius: 2.9rem;
+    font-size: 18px;
+    font-weight: 400;
+}
