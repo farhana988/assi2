@@ -1,3 +1,10 @@
+/* *{
+    border: 1px solid red;
+  }
+   
+  body{
+    border: 2px dashed green;
+  } */
 body {
   font-family: "Inter";
   margin: 0;
@@ -8,20 +15,43 @@ body {
   max-width: 1440px;
   margin: 0 auto;
 }
+.width {
+  max-width: 1060px;
+  margin: 0 auto;
+}
+section {
+  margin-bottom: 100px;
+}
+.title {
+  color: rgb(255, 255, 255);
 
-/* nav style starts from here */
+  font-size: 48px;
+  font-weight: 900;
+}
+h2 {
+  margin: 0;
+  padding: 0;
+}
+p {
+  color: rgba(255, 255, 255, 0.5);
+
+  font-size: 14px;
+  font-weight: 400;
+}
+
+/*-------------  nav style starts from here  ----------------- */
 nav {
+  /* border: 2px solid red; */
   display: flex;
   justify-content: space-between;
   align-items: center;
   margin-top: 3.5rem;
-  border: 2px solid red;
 }
 .logo {
-    color: rgb(230, 83, 60);
-    font-size: 36px;
-    font-weight: 800;
-  }
+  color: rgb(230, 83, 60);
+  font-size: 36px;
+  font-weight: 800;
+}
 .nav-links {
   list-style: none;
   display: flex;
@@ -34,18 +64,579 @@ nav {
 .nav-links li {
   margin: 0;
 }
+.nav-links .con {
+  margin: 0 40px 0 47px;
+}
 .nav-links a {
+  /* border: 2px solid red; */
   text-decoration: none;
-  padding: 10px 20px;
+  padding: 4px 0;
+  margin: 0px 10px;
   display: block;
   color: rgb(255, 255, 255);
   font-size: 18px;
   font-weight: 400;
 }
 .nav-links a.home {
+  padding: 8px 20px 8px 20px;
   border-radius: 2.8rem;
   background: rgb(230, 83, 60);
   margin: 3px;
   font-weight: 600;
+  margin-right: 47px;
 }
+.nav-links a.abt {
+  padding: 8px 20px 8px 20px;
+}
+
+/*-------------  nav style ends here  ----------------- */
+
+/*-------------  banner style starts from here  ----------------- */
+
+.banner {
+  /* border: 5px solid blue; */
+  text-align: center;
+  padding-top: 32px;
+  border-radius: 10px;
+
+  background: linear-gradient(
+    #111111,
+    rgba(46, 44, 44, 0.5),
+    black
+  );
+}
+.banner-content {
+  padding: 0;
+  display: flex;
+  text-align: left;
+  justify-content: space-around;
+}
+.banner-content-text {
+  /* border: 2px solid red; */
+  margin-top: 64px;
+  margin-bottom: 76px;
+}
+.banner h1 {
+  /* border: 2px solid red; */
+  margin: 0;
+  padding: 0;
+  margin-bottom: 30px;
+  color: rgb(255, 255, 255);
+  font-size: 78px;
+  font-weight: 900;
+}
+
+.banner h1 span {
+  font-style: italic;
+  font-weight: 200;
+}
+
+.banner p {
+  /* border: 2px solid red; */
+  /* margin: 28px 0; */
+  color: rgba(255, 255, 255, 0.5);
+  font-size: 16px;
+  font-weight: 400;
+  text-align: left;
+  margin-bottom: 30px;
+}
+
+.banner-buttons {
+  /* border: 2px solid red; */
+  /* margin-bottom: 30px; */
+  margin-bottom: 0;
+
+  padding: 16px;
+}
+
+.banner-buttons .btn {
+  border: none;
+  text-decoration: none;
+  border-radius: 42px;
+  background: rgb(230, 83, 60);
+  color: rgb(255, 255, 255);
+  font-size: 18px;
+  font-weight: 600;
+  padding: 16px 47px;
+}
+
+.banner-buttons .dwn {
+  box-sizing: border-box;
+  border: 1px solid rgb(255, 255, 255);
+  background-color: #111111;
+  margin-left: 10px;
+}
+.banner-image {
+  /* border: 2px solid red; */
+  margin-left: 170px;
+  margin-right: 24px;
+}
+.box {
+  position: absolute;
+
+  padding: 0 20px;
+  border-radius: 12px;
+  color: white;
+  font-size: 1.2em;
+  text-align: center;
+  display: flex;
+  align-items: center;
+  border: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+.top-right {
+  top: 22%;
+  right: 18%;
+  background: rgba(255, 255, 255, 0.1);
+  background-blend-mode: overlay;
+}
+
+.bottom-left {
+  bottom: 35%;
+  left: 53%;
+  flex-direction: row;
+
+  backdrop-filter: blur(20px);
+  background: rgba(48, 48, 48, 0.54);
+}
+
+.circle {
+  width: 40px;
+  height: 40px;
+  background: rgb(230, 83, 60);
+  border-radius: 100%;
+  margin-right: 10px;
+}
+
+.three {
+  font-size: 1.5em;
+  font-weight: bold;
+  color: rgb(255, 255, 255);
+}
+.five {
+  color: rgb(255, 255, 255);
+  font-family: Inter;
+  font-size: 40px;
+  font-weight: 900;
+}
+
+/*-------------  banner style ends here  ----------------- */
+
+/*-------------  habit style starts from here  ----------------- */
+.habits-container {
+  /* border: 2px solid red; */
+  align-items: center;
+  text-align: center;
+  margin-bottom: 100px;
+}
+.habit-list {
+  /* border: 2px solid red; */
+  display: flex;
+  gap: 40px;
+  margin-top: 50px;
+}
+.habit {
+  /* border: 2px solid red; */
+  gap: 40px;
+}
+.habit img {
+  border-radius: 100px;
+}
+
+/*-------------  habit style ends here  ----------------- */
+
+/*-------------  mile style starts from here  ----------------- */
+.mile {
+  /* border: 2px solid red; */
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  border-radius: 18px;
+
+  background: rgb(34, 34, 34);
+  margin-bottom: 100px;
+}
+
+.mile-image img {
+  /* border: 2px solid red; */
+  max-width: 366px;
+  height: 312px;
+  border-radius: 18px;
+  margin: 30px;
+  margin-left: 165px;
+  object-fit: none;
+  object-position: 66% 30%;
+}
+
+.second-btn {
+  /* border: 2px solid red; */
+  text-decoration: none;
+  border-radius: 42px;
+  background: rgb(230, 83, 60);
+  color: rgb(255, 255, 255);
+  font-size: 18px;
+  font-weight: 600;
+  padding: 16px 72px;
+  margin-top: 34px;
+}
+.mile-content {
+  /* margin: 40px 0 40px 54px; */
+  /* border: 2px solid red; */
+  margin-top: 40px;
+  margin-left: 50px;
+  margin-bottom: 40px;
+}
+.mile-content p {
+  margin-top: 14px;
+  margin-bottom: 34px;
+}
+.mile-content h2 {
+  color: rgb(255, 255, 255);
+  font-family: Inter;
+  font-size: 48px;
+  font-weight: 900;
+}
+
+/*-------------  mile style ends here  ----------------- */
+
+/*-------------  bmi style starts from here  ----------------- */
+
+.bmi {
+  /* border: 2px solid red; */
+  background: rgb(34, 34, 34);
+  margin-bottom: 100px;
+}
+
+.bmi-contents {
+  /* border: 2px solid red; */
+justify-content: center;
+  text-align: left;
+  align-items: center;
+  margin-bottom: 88px;
+  padding-left: 300px;
+}
+.bmi-contents h2 {
+  margin: 0;
+  padding: 0;
+}
+
+.bmi-container h3 {
+  color: rgb(255, 255, 255);
+  font-family: Inter;
+  font-size: 28px;
+  font-weight: 900;
+}
+.bmi-container {
+  /* border: 2px solid red; */
+  /* display: flex;
+  justify-content: space-between; */
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  background: rgb(34, 34, 34);
+  width: 100%;
+  padding-bottom: 50px ;
+}
+
+.bmi-calculator {
+  /* border: 5px solid wheat; */
+}
+.bmi-form {
+  /* border: 9px solid red; */
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 10px;
+}
+.bmi-form input,
+.bmi-form select {
+  padding: 12px 40px 12px 20px;
+  border: none;
+  border-radius: 8px;
+  background: rgba(255, 255, 255, 0.1);
+
+  color: rgba(255, 255, 255, 0.6);
+  font-family: Inter;
+  font-size: 16px;
+  font-weight: 400;
+}
+.bmi-form option {
+  color: white;
+  background: rgba(0, 0, 0, 0.726);
+}
+.bmi-form .full-width {
+  grid-column: span 2;
+}
+.bmi-form .btn {
+  border-radius: 40px;
+  border: none;
+  background: rgb(230, 83, 60);
+  color: rgb(255, 255, 255);
+  font-family: Inter;
+  font-weight: 600;
+  font-size: 18px;
+  padding: 16px 40px;
+  margin-right: 70px;
+}
+
+table {
+  border-collapse: collapse;
+}
+
+table,
+th,
+td {
+  border: 1px solid rgba(255, 255, 255, 0.1);
+}
+th {
+  color: rgb(255, 255, 255);
+
+  font-size: 16px;
+  font-weight: 500;
+}
+td {
+  color: rgba(255, 255, 255, 0.5);
+
+  font-size: 14px;
+  font-weight: 400;
+}
+
+th,
+td {
+  padding: 15px;
+  text-align: left;
+}
+
+/*-------------  bmi style ends here  ----------------- */
+
+/*-------------  team style starts from here  ----------------- */
+
+.team-container {
+  /* border: 2px solid red; */
+  text-align: center;
+  margin-bottom: 100px;
+}
+.team-container h2{
+  color: rgb(255, 255, 255);
+  
+  font-size: 48px;
+  font-weight: 900;
+} 
+.team-list {
+  /* border: 2px solid white; */
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 20px;
+  padding: 20px;
+  background: rgba(255, 255, 255, 0.1);
+  margin-top: 50px;
+}
+
+.team-member img {
+  /* border: 2px solid red; */
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  border-radius: 18px;
+  border-radius: 18px;
+  background-color: rgba(0, 0, 0, 0.3);
+  background-blend-mode: overlay;
+}
+.team-member {
+  position: relative;
+  overflow: hidden;
+  text-align: left;
+  max-width: 350px;
+  height: 300px;
+}
+
+.team-member h3,
+.team-member p {
+  position: absolute;
+  padding: 5px 20px;
+  margin: 0;
+}
+
+.team-member h3 {
+  bottom: 35px;
+  color: rgb(255, 255, 255);
+  font-size: 20px;
+  font-weight: 900;
+}
+
+.team-member p {
+  bottom: 10px;
+}
+/*-------------  team style ends here  ----------------- */
+
+/*-------------  workout style starts from here  ----------------- */
+
+.workout-container {
+  /* border: 2px solid red; */
+  margin: 0, auto;
+  margin-bottom: 100px;
+}
+
+.workout-content {
+  align-items: center;
+  text-align: center;
+  margin: 0, auto;
+}
+.workout-content h2 {
+  color: rgb(255, 255, 255);
+  font-family: Inter;
+  font-size: 48px;
+  font-weight: 900;
+}
+
+.day-container {
+  /* border: 1px solid #ddd; */
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 20px 0;
+  gap: 10px;
+}
+
+.day-container .day {
+  /* border: 10px solid #2dd695; */
+  background-color: #111111;
+  border: 1px solid #a57c7c;
+  padding: 30px;
+  border-radius: 20px;
+
+  cursor: pointer;
+  color: white;
+}
+
+.day.active {
+  /* border: 1px solid #a57c7c; */
+  color: #e02626;
+  background-color: #eed9dc;
+}
+
+.days button:hover {
+  background-color: black;
+}
+
+.arrow {
+  border: solid rgb(238, 228, 228);
+  border-width: 0 3px 3px 0;
+  display: inline-block;
+  padding: 3px;
+  transform: rotate(-45deg);
+  -webkit-transform: rotate(-45deg);
+}
+
+.completed {
+  /* border: solid rgb(238, 228, 228); */
+  padding: 10px 35px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.completed h2 {
+  color: wheat;
+  font-family: Inter;
+  font-size: 30px;
+  font-weight: 600;
+}
+
+.workouts-container {
+  /* border: 2px solid rgba(35, 17, 194, 0.822); */
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  background: rgb(34, 34, 34);
+  gap: 30px;
+  padding: 30px;
+}
+
+.workout {
+  /* border: 2px solid rgb(32, 194, 17); */
+  display: flex;
+  align-items: center;
+  padding: 20px 40px;
+  border-radius: 30px;
+  background-color: #111111;
+}
+
+.workout:hover {
+  background-color: black;
+}
+
+.workout .info {
+  padding: 20px;
+}
+
+.workout .info h3 {
+  margin: 0;
+}
+
+.workout .info p {
+  margin: 5px 0;
+  color: #666;
+}
+
+/*-------------  workout style ends here  ----------------- */
+
+
+/*-------------  footer style starts from here  ----------------- */
+footer {
+  background: rgba(255, 255, 255, 0.1);
+}
+footer h3 {
+  color: rgb(255, 255, 255);
+  font-family: Inter;
+  font-size: 32px;
+  font-weight: 700;
+  margin: 0;
+}
+.footer-container {
+  /* border: 2px solid red; */
+  margin: 0, auto;
+
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+}
+.footer-container li {
+  list-style: none;
+  margin: 20px 0px;
+}
+.footer-left h1 {
+  margin: 0;
+  padding: 0;
+  color: rgb(230, 83, 60);
+  font-family: Inter;
+  font-size: 70px;
+  font-weight: 800;
+  margin-right: 290px;
+}
+.footer-left p {
+  color: rgba(255, 255, 255, 0.5);
+  font-family: Inter;
+  font-size: 14px;
+  font-weight: 400;
+  margin-right: 100px;
+}
+.footer-content {
+  display: flex;
+  justify-content: space-between;
+}
+.footer-middle a,
+.footer-right a {
+  text-decoration: none;
+  color: rgba(255, 255, 255, 0.5);
+  font-family: Inter;
+  font-size: 20px;
+  font-weight: 400;
+}
+hr {
+  border: 2px solid rgba(255, 255, 255, 0.1);
+}
+.copyright {
+  text-align: center;
+  color: rgba(255, 255, 255, 0.5);
+  font-family: Inter;
+  font-size: 20px;
+  font-weight: 400;
+  padding: 20px;
+}
+/*-------------  footer style ends here  ----------------- */
 

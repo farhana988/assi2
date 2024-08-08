@@ -11,97 +11,103 @@
 </head>
 <body>
     <header>  
-        <nav>
+        <nav class="width">
             <div class="logo"><i>Fitness</i></div>
             <div class="nav-items">
                 <ul class="nav-links">
-                    <li><a href="#" class="home">Home</a></li>
+                    <li><a href="" class="home">Home</a></li>
                     <li><a href="">Service</a></li>
-                    <li><a href="">Contact</a></li>
-                    <li><a href="">About</a></li>
+                    <li class="con"><a href="">Contact</a></li>
+                    <li><a href="" class="abt">About</a></li>
                 </ul>
             </div>
         </nav>
 
-        <section class="banner">
-            <div class="banner-content">
-                <h1>Get body in <span class="miami-font">shape</span> & stay healthy</h1>
-                <p>A huge selection of health and fitness content, 
-                    healthy recipes, and transformation stories to 
-                    help you get fit and stay fit!</p>
-                <div class="banner-buttons">
-                    <a href="#" class="btn">Join Club Now!</a>
-                    <a href="#" class="btn">Download App</a>
+        <section class="banner ">
+            <div class="banner-content width">
+                <div class="banner-content-text">
+                    <h1>Get body in <span class="miami-font">shape</span> & stay healthy</h1>
+                    <p>A huge selection of health and fitness content, 
+                        healthy recipes, and transformation stories to 
+                        help you get fit and stay fit!</p>
+                    <div class="banner-buttons">
+                        <a href="#" class="btn">Join Club Now!</a>
+                        <a href="#" class="btn dwn">Download App</a>
+                    </div>
                 </div>
                 <div class="banner-image">
-                    <img src="" alt="banner img">
+                    <img src="images/Images 2.png" alt="banner img">
+                    
                 </div>
+                <div class="gradient-overlay"></div>
+                
             </div>
 
             <div class="banner-box">
-                <div class="box500">
-                    <h1>500+</h1>
-                    <p>Free Workout Videos</p>
+                <div class="box top-right">
+                    <p><span class="five">500+</span><br>Free Workout Videos</p>
                 </div>
-                <div class="box350">
-                    <h3>350+</h3>
-                    <p>Video Tutorials</p>
+                <div class="box bottom-left">
+                    <div class="circle"></div>
+                    <p><span class="three">350+</span><br>Video tutorial</p>
                 </div>
             </div>
         </section>
     </header>
 
     <main>
-        <section class="habits">
-            <div class="habits-container">
-                <h2>Change Your Habits</h2>
+       
+            <section class="habits-container width">
+                <h2 class="title">Change Your Habits</h2>
                 <p>We believe fitness should be accessible to everyone, 
                     everywhere, regardless of income or access to a gym.</p>
                 <div class="habit-list">
                     <div class="habit">
-                        <img src="" alt="">
+                        <img src="images/image 3.png" alt="">
                         <h3>Movement</h3>
                         <p>We believe fitness should be accessible to everyone.</p>
                     </div>
                     <div class="habit">
-                        <img src="" alt="">
+                        <img src="images/image 2.png" alt="">
                         <h3>Time</h3>
                         <p>We believe fitness should be accessible to everyone.</p>
                     </div>
                     <div class="habit">
-                        <img src="" alt="">
+                        <img src="images/image 4.png" alt="">
                         <h3>Practice</h3>
                         <p>We believe fitness should be accessible to everyone.</p>
                     </div>
                     <div class="habit">
-                        <img src="" alt="">
+                        <img src="images/image 5.png" alt="">
                         <h3>Weight Loss</h3>
                         <p>We believe fitness should be accessible to everyone.</p>
                     </div>
                 </div>
+            </section>
+        
+
+        <section class="mile width">
+            <div class="mile-content">
+                <h2 class="title">Run an Extra Mile Easily</h2>
+                <p>We believe fitness should be accessible to everyone, everywhere, regardless of income or access to a gym. With hundreds of professional workouts.</p>
+                <a href="" class="second-btn">Join Now</a>
+            </div>
+   
+            <div class="mile-image">
+                <img src="images/run.jpg" alt="run">
             </div>
         </section>
+        
     
-        <section class="mile">
-            <div class="mile-container">
-                <div class="mile-content">
-                    <h2>Run an Extra Mile Easily</h2>
-                    <p>We believe fitness should be accessible to everyone, everywhere, regardless of income or access to a gym. With hundreds of professional workouts.</p>
-                    <a href="#" class="btn">Join Now</a>
-                </div>
-                <div class="mile-image">
-                    <img src="" alt="run">
-                </div>
-            </div>
-        </section>
-    
-        <section class="bmi">
-            <div class="bmi-contents">
-                <h2>BMI Calculator</h2>
+            <div class="bmi-contents width">
+                <h2 class="title">BMI Calculator</h2>
                 <p>We believe fitness should be accessible to everyone,
-                     everywhere, regardless of income or access to a gym.</p>
+                    everywhere, regardless of income or access to a gym.</p>
             </div>
-            <div class="bmi-container">
+
+        <section class="bmi">
+            
+            <div class="bmi-container width">
                 <div class="bmi-chart">
                     <h3>BMI Calculator Chart</h3>
                     <table>
@@ -136,11 +142,13 @@
                         <input type="text" placeholder="Weight (kg)">
                         <input type="text" placeholder="Age">
                         <select>
+                            <option value="" disabled selected>Sex</option>
                             <option value="male">Male</option>
                             <option value="female">Female</option>
                             <option value="other">Other</option>
                         </select>
-                        <select>
+                        <select class="full-width">
+                            <option value="" disabled selected>Select an activity factor</option>
                             <option value="Sedentary">Sedentary</option>
                             <option value="Light exercise">Light exercise</option>
                             <option value="Moderate exercise ">Moderate exercise </option>
@@ -150,78 +158,171 @@
                         <button type="submit" class="btn">Calculate</button>
                     </form>
                 </div>
-            </div>
-           
+            </div> 
         </section>
     
-        <section class="team">
-            <div class="team-container">
+       
+            <section class="team-container width">
                 <h2>Meet Our Team</h2>
                 <p>We believe fitness should be accessible to everyone, everywhere, 
                     regardless of income or access to a gym.</p>
                 <div class="team-list">
                     <div class="team-member">
-                        <img src="" alt="Jerome Bell">
+                        <img src="images/trainer1.png" alt="Jerome Bell">
                         <h3>Jerome Bell</h3>
                         <p>Trainer</p>
                     </div>
                     <div class="team-member">
-                        <img src="" alt="Cameron Williamson">
+                        <img src="images/trainer2.png" alt="Cameron Williamson">
                         <h3>Cameron Williamson</h3>
                         <p>Trainer</p>
                     </div>
                     <div class="team-member">
-                        <img src="" alt="Darrell Steward">
+                        <img src="images/trainer3.png" alt="Darrell Steward">
                         <h3>Darrell Steward</h3>
                         <p>Trainer</p>
                     </div>
                     <div class="team-member">
-                        <img src="" alt="Dianne Russell">
+                        <img src="images/trainer4.png" alt="Dianne Russell">
                         <h3>Dianne Russell</h3>
                         <p>Trainer</p>
                     </div>
                     <div class="team-member">
-                        <img src="" alt="Cody Fisher">
+                        <img src="images/trainer5.png" alt="Cody Fisher">
                         <h3>Cody Fisher</h3>
                         <p>Trainer</p>
                     </div>
                     <div class="team-member">
-                        <img src="" alt="Theresa Webb">
+                        <img src="images/trainer6.png" alt="Theresa Webb">
                         <h3>Theresa Webb</h3>
                         <p>Trainer</p>
                     </div>
                 </div>
-            </div>
-        </section>
+            </section>
+        
+
+            <section class="workout-container width">
+                <div class="workout-content">
+                    <h2>20 days Challenge</h2>
+                    <p>With just 20 mins of workouts a day, this 3 week bodyweight program makes it easy for you to stay motivated and consistent.</p>
+                       <div class="day-container">
+                            <div class="days">
+                                <button class="day active">Day 1</button>
+                                <button class="day">Day 2</button>
+                                <button class="day">Day 3</button>
+                                <button class="day">Day 4</button>
+                                <button class="day">Day 5</button>
+                                <!-- <button class="day">Day 6</button>
+                                <button class="day">Day 7</button>
+                                <button class="day">Day 8</button> -->
+                            </div>
+                            <i class="arrow"></i>
+                       </div>
+                    
+                </div>
+            
+                <div class="workout-plan">
+                    
+                    <div class="completed" >
+                        <h2><i>Day 1's Workout</i></h2>
+                        <div>
+                            <input type="checkbox"/>
+                            <label for="mark">Mark as Complete</label>
+                        </div>
+                    </div>
+                    <div class="workouts-container">
+                        <div class="workout">
+                            <iframe width="160" height="100" src="https://www.youtube.com/embed/-HEHDNr8FN8?si=LnE3eW3DmRyKkv03" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+                            <div class="info">
+                                <h3>Warm Up</h3>
+                                <p>Warm Up</p>                        
+                            </div>                   
+                        </div>
+        
+                        <div class="workout">
+                            <iframe width="160" height="100" src="https://www.youtube.com/embed/Dr7a-BuLVpA?si=q6IGXJMycm29uIFJ" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+                            <div class="info">
+                                <h3>Standing HIIT</h3>
+                                <p>Full Body</p>                    
+                            </div>
+                        </div>
+        
+                        <div class="workout">
+                            <iframe width="160" height="100" src="https://www.youtube.com/embed/2_u7Mmv9HfA?si=QegCC6tliTS8ePLy" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+                            <div class="info">
+                                <h3>Daily Abs</h3>
+                                <p>Abs</p>                      
+                            </div>
+                        </div>
+        
+                        <div class="workout">
+                            <iframe width="160" height="100" src="https://www.youtube.com/embed/cSLU3msDWxQ?si=s-3jx9pgkKgfYK67" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+                            <div class="info">
+                                <h3>Cooldown & Stretch Routine</h3>
+                                <p>Cooldown</p>          
+                            </div>                  
+                        </div>
+        
+                    </div>
+                        
+                </div>
+                 
+            </section>
+
+
+
+        
+
+
     </main>
 
-    <footer>
-        <div class="footer-container">
+    <footer >
+        <div class="footer-container width ">
             <div class="footer-left">
-                <p>Fitness</p>
+                <h1><i>Fitness</i></h1>
                 <p>We believe fitness should be accessible to everyone, everywhere, regardless of income or access to a gym. With hundreds of professional workouts.</p>
             </div>
-            <div class="footer-middle">
-                <h3>Get Started</h3>
-                <ul>
-                    <li>Service</li>
-                    <li>Contact Us</li>
-                    <li>Affiliate Program</li>
-                    <li>About Us</li>
-                </ul>
-            </div>
-            <div class="footer-right">
-                <h3>Get Started</h3>
-                <ul>
-                    <li>Fitness</li>
-                    <li>Platform</li>
-                    <li>Workout Libary</li>
-                    <li>App Design</li>
-                </ul>
+            <div class="footer-content">
+                <div class="footer-middle">
+                    <h3>Get Started</h3>
+                    
+                        <li><a href="">Service</a></li>
+                        <li><a href="">Contact Us</a></li>
+                        <li><a href="">Affiliate Program</a></li>
+                        <li><a href="">About Us</a></li>
+                    
+                </div>
+                <div class="footer-right">
+                    <h3>Get Started</h3>
+                    
+                        <li><a href="">Fitness</a></li>
+                        <li><a href="">Platform</a></li>
+                        <li><a href="">Workout Libary</a></li>
+                        <li><a href="">App Design</a></li>
+                    
+                </div>
             </div>
         </div>
-        <hr>
+        <hr class="width">
         <p class="copyright">All right reserved @Fitness 2024</p>
     </footer>
+
+    
+  
+ 
+ 
+
+
+
+
+
+
+
+
+
+    
+    
+
+
 </body>
 </html>
