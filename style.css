@@ -1,10 +1,10 @@
-/* *{
+*{
     border: 1px solid red;
   }
    
   body{
     border: 2px dashed green;
-  } */
+  }
 body {
   font-family: "Inter";
   margin: 0;
@@ -12,11 +12,15 @@ body {
   box-sizing: border-box;
   background-color: #111111;
   color: #ffffff;
-  max-width: 1440px;
-  margin: 0 auto;
+  /* max-width: 1440px; */
+  /* margin: 0 auto; */
+}
+.ham{
+  display: none;
 }
 .width {
-  max-width: 1060px;
+  /* max-width: 1060px; */
+  width: 75%;
   margin: 0 auto;
 }
 section {
@@ -171,7 +175,7 @@ nav {
   margin-left: 170px;
   margin-right: 24px;
 }
-.box {
+/* .box {
   position: absolute;
 
   padding: 0 20px;
@@ -218,7 +222,7 @@ nav {
   font-family: Inter;
   font-size: 40px;
   font-weight: 900;
-}
+} */
 
 /*-------------  banner style ends here  ----------------- */
 
@@ -332,7 +336,7 @@ justify-content: center;
   display: grid;
   grid-template-columns: repeat(2, 1fr);
   background: rgb(34, 34, 34);
-  width: 100%;
+ 
   padding-bottom: 50px ;
 }
 
@@ -425,6 +429,7 @@ td {
   grid-template-columns: repeat(3, 1fr);
   gap: 20px;
   padding: 20px;
+  border-radius: 18px;
   background: rgba(255, 255, 255, 0.1);
   margin-top: 50px;
 }
@@ -640,3 +645,183 @@ hr {
 }
 /*-------------  footer style ends here  ----------------- */
 
+
+
+
+
+/* -----------------------------    mobile  ----------------------------------------------------------- */
+
+
+
+@media screen and (max-width: 576px) {
+  body{
+    max-width: 353px;;
+    }
+  p{
+    font-size: 10px;
+  }
+  .width{
+    width: 100%;
+  }
+  .nav-links{
+    display: none;
+  }
+  .ham{
+    display: block;
+  }
+  .ham i{
+    width: 24px;
+  }
+
+  .banner-content{
+   
+      padding: 0;
+     flex-direction: column;
+      text-align: left;
+ 
+    
+  }
+  .banner-content-text h1{
+    font-family: Inter;
+font-size: 36px;
+font-weight: 900;
+  }
+  .banner-image {
+    /* border: 2px solid red; */
+    width: 50%;
+    margin-left: 0;
+    margin-right: 0;
+  }
+  .banner-image img{
+    width: 200%;
+    object-fit: none;
+  object-position: 76% 40%;
+  }
+
+
+
+
+
+
+
+
+
+
+
+  .habit-list {
+    /* border: 2px solid red; */
+    flex-direction: column;
+  
+  }
+
+  .mile {
+    /* border: 2px solid red; */
+    display: flex;
+    flex-direction: column;
+    border-radius: 18px;
+  
+    background: rgb(34, 34, 34);
+    margin-bottom: 100px;
+  }
+
+  .mile-image img {
+   
+    max-width: 287px;
+    border-radius: 18px;
+   
+    margin-left: 0;
+    object-fit: cover;
+  
+  }
+
+  .bmi-container {
+    
+    display: flex;
+    flex-direction: column;
+   
+  }
+  .bmi-contents {
+    /* border: 2px solid red; */
+  justify-content: center;
+    text-align: left;
+    align-items: center;
+    margin-bottom: 88px;
+    padding-left: 0;
+  }
+ 
+  .bmi-form {
+ max-width: 353px;
+   
+  }
+  .bmi-calculator {
+    /* border: 5px solid wheat; */
+   
+  }
+  .team-list {
+    /* border: 2px solid white; */
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+    gap: 20px;
+    padding: 20px;
+    border-radius: 18px;
+    background: rgba(255, 255, 255, 0.1);
+    margin-top: 50px;
+  }
+  .workouts-container {
+    /* border: 2px solid rgba(35, 17, 194, 0.822); */
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+    background: rgb(34, 34, 34);
+    gap: 30px;
+    padding: 30px;
+  }
+  .day-hide{
+    display: none;
+  }
+  .workout {
+    /* border: 2px solid rgb(32, 194, 17); */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 20px 40px;
+    border-radius: 30px;
+    background-color: #111111;
+  }
+  .completed {
+    /* border: solid rgb(238, 228, 228); */
+    padding: 10px 35px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  .footer-container {
+    /* border: 2px solid red; */
+    margin: 0, auto;
+  
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+  }
+  .footer-content {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+  }
+  /* footer h3 {
+    color: rgb(255, 255, 255);
+    font-family: Inter;
+    font-size: 12px;
+    font-weight: 700;
+    margin: 0;
+  } */
+  .footer-left h1 {
+    margin: 0;
+    padding: 0;
+    color: rgb(230, 83, 60);
+    font-family: Inter;
+    font-size: 70px;
+    font-weight: 800;
+    margin-right: 0px;
+  }
+}
