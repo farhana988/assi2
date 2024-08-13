@@ -9,6 +9,8 @@
 <link href="https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="style.css">
     <script src="https://kit.fontawesome.com/cb8ad03379.js" crossorigin="anonymous"></script>
+    <link href="https://fonts.cdnfonts.com/css/miama" rel="stylesheet">
+                
 </head>
 <body>
     <header>  
@@ -26,33 +28,33 @@
             </div>
         </nav>
 
-        <section class="banner ">
-            <div class="banner-content width">
-                <div class="banner-content-text">
-                    <h1>Get body in <br> <span class="miami-font">shape</span> & stay <br> healthy</h1>
-                    <p>A huge selection of health and fitness content, 
-                        healthy recipes, and transformation stories to 
-                        help you get fit and stay fit!</p>
-                    <div class="banner-buttons">
-                        <a href="#" class="btn">Join Club Now!</a>
-                        <a href="#" class="btn dwn">Download App</a>
-                    </div>
-                </div>
-                <div class="banner-image">
-                    <img src="images/Images 2.png" alt="banner img">
-                    
-                </div>
-                <div class="gradient-overlay"></div>
+        <section class="banner-container ">
+            <div class="banner width">
+               
+                    <div class="banner-content-text">
+                        <h1><span class="h1-first">Get body in</span><br> <span class="different-font">shape</span> & stay <br> <span class="normal"> healthy</span></h1>
+                        <p>A huge selection of health and fitness content, 
+                            healthy recipes, and transformation stories to 
+                            help you get fit and stay fit!</p>
+                        <div class="banner-buttons">
+                            <a href="#" class="btn">Join Club Now!</a>
+                            <a href="#" class="btn dwn">Download App</a>
+                        </div>
+                    </div>             
                 
-            </div>
-
-            <div class="banner-box">
-                <div class="box top-right">
-                    <p><span class="five">500+</span><br>Free Workout Videos</p>
-                </div>
-                <div class="box bottom-left">
-                    <div class="circle"></div>
-                    <p><span class="three">350+</span><br>Video tutorial</p>
+                    <div class="banner-image">
+                        <img src="images/Images 2.png" alt="">
+                    </div>
+                <div class="banner-box">
+                    <div class="box top-right">
+                        <p><span class="five">500+</span><br>Free Workout Videos</p>
+                    </div>
+                    <div class="box bottom-left">
+                        <div class="circle"> <span class="trianle">&#9654;</span></div>
+                       <div>
+                        <p><span class="three">350+</span><br>Video tutorial</p>
+                       </div>
+                    </div>
                 </div>
             </div>
         </section>
@@ -61,9 +63,11 @@
     <main>
        
             <section class="habits-container width">
-                <h2 class="title">Change Your Habits</h2>
+                <div class="habit-text">
+                    <h2 class="title">Change Your Habits</h2>
                 <p>We believe fitness should be accessible to everyone, 
                     everywhere, regardless of income or access to a gym.</p>
+                </div>
                 <div class="habit-list">
                     <div class="habit">
                         <img src="images/image 3.png" alt="">
@@ -92,9 +96,10 @@
         <section class="mile width">
             <div class="mile-content">
                 <h2 class="title">Run an Extra Mile Easily</h2>
-                <p>We believe fitness should be accessible to everyone, everywhere, regardless of income or access to a gym. With hundreds of professional workouts.</p>
+                <p>We believe fitness should be accessible to everyone,  everywhere, regardless of income or access to a gym. With hundreds of professional workouts.</p>
                 <a href="" class="second-btn">Join Now</a>
             </div>
+            <div></div>
    
             <div class="mile-image">
                 <img src="images/run.jpg" alt="run">
@@ -109,59 +114,61 @@
             </div>
 
             
-            <section class="bmi-container width">
-                <div class="bmi-chart">
-                    <h3>BMI Calculator Chart</h3>
-                    <table>
-                        <tr>
-                            <th>BMI</th>
-                            <th>Weight Status</th>
-                        </tr>
-                        <tr>
-                            <td>Below 18.5</td>
-                            <td>Underweight</td>
-                        </tr>
-                        <tr>
-                            <td>18.5 - 24.9</td>
-                            <td>Healthy</td>
-                        </tr>
-                        <tr>
-                            <td>25.0 - 29.9</td>
-                            <td>Overweight</td>
-                        </tr>
-                        <tr>
-                            <td>30.0 and Above</td>
-                            <td>Obese</td>
-                        </tr>
-                    </table>
-                </div>
-                <div class="bmi-calculator">
-                    <h3>Calculate your BMI</h3>
-                    <p>We believe fitness should be accessible to everyone, 
-                        everywhere, regardless of income or access to a gym. </p>
-                    <form class="bmi-form">
-                        <input type="text" placeholder="Height (cm)">
-                        <input type="text" placeholder="Weight (kg)">
-                        <input type="text" placeholder="Age">
-                        <select>
-                            <option value="" disabled selected>Sex</option>
-                            <option value="male">Male</option>
-                            <option value="female">Female</option>
-                            <option value="other">Other</option>
-                        </select>
-                        <select class="full-width">
-                            <option value="" disabled selected>Select an activity factor</option>
-                            <option value="Sedentary">Sedentary</option>
-                            <option value="Light exercise">Light exercise</option>
-                            <option value="Moderate exercise ">Moderate exercise </option>
-                            <option value="Heavy exercise ">Heavy exercise </option>
-                        </select>
-                        
-                        <button type="submit" class="btn">Calculate</button>
-                    </form>
-                </div>
-            </section> 
-       
+            <section class="bmi">
+                <section class="bmi-container width">
+                    <div class="bmi-chart">
+                        <h3>BMI Calculator Chart</h3>
+                        <table>
+                            <tr>
+                                <th>BMI</th>
+                                <th>Weight Status</th>
+                            </tr>
+                            <tr>
+                                <td>Below 18.5</td>
+                                <td>Underweight</td>
+                            </tr>
+                            <tr>
+                                <td>18.5 - 24.9</td>
+                                <td>Healthy</td>
+                            </tr>
+                            <tr>
+                                <td>25.0 - 29.9</td>
+                                <td>Overweight</td>
+                            </tr>
+                            <tr>
+                                <td>30.0 and Above</td>
+                                <td>Obese</td>
+                            </tr>
+                        </table>
+                    </div>
+                    <div class="bmi-calculator">
+                        <h3>Calculate your BMI</h3>
+                        <p>We believe fitness should be accessible to everyone, 
+                            everywhere, regardless of income or access to a gym. </p>
+                        <form class="bmi-form">
+                            <input type="text" placeholder="Height (cm)">
+                            <input type="text" placeholder="Weight (kg)">
+                            <input type="text" placeholder="Age">
+                            <select>
+                                <option value="" disabled selected>Sex</option>
+                                <option value="male">Male</option>
+                                <option value="female">Female</option>
+                                <option value="other">Other</option>
+                            </select>
+                            <select class="full-width">
+                                <option value="" disabled selected>Select an activity factor</option>
+                                <option value="Sedentary">Sedentary</option>
+                                <option value="Light exercise">Light exercise</option>
+                                <option value="Moderate exercise ">Moderate exercise </option>
+                                <option value="Heavy exercise ">Heavy exercise </option>
+                            </select>
+                            
+                            <button type="submit" class="btn">Calculate</button>
+                        </form>
+                    </div>
+                </section> 
+           
+            </section>
     
        
             <section class="team-container width">
@@ -234,7 +241,7 @@
                     </div>
                     <div class="workouts-container">
                         <div class="workout">
-                            <iframe width="160" height="100" src="https://www.youtube.com/embed/-HEHDNr8FN8?si=LnE3eW3DmRyKkv03" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+                            <iframe width="260" height="150" src="https://www.youtube.com/embed/-HEHDNr8FN8?si=LnE3eW3DmRyKkv03" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
                             <div class="info">
                                 <h3>Warm Up</h3>
                                 <p>Warm Up</p>                        
@@ -242,7 +249,7 @@
                         </div>
         
                         <div class="workout">
-                            <iframe width="160" height="100" src="https://www.youtube.com/embed/Dr7a-BuLVpA?si=q6IGXJMycm29uIFJ" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+                            <iframe width="260" height="150" src="https://www.youtube.com/embed/Dr7a-BuLVpA?si=q6IGXJMycm29uIFJ" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
                             <div class="info">
                                 <h3>Standing HIIT</h3>
                                 <p>Full Body</p>                    
@@ -250,7 +257,7 @@
                         </div>
         
                         <div class="workout">
-                            <iframe width="160" height="100" src="https://www.youtube.com/embed/2_u7Mmv9HfA?si=QegCC6tliTS8ePLy" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+                            <iframe width="260" height="150" src="https://www.youtube.com/embed/2_u7Mmv9HfA?si=QegCC6tliTS8ePLy" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
                             <div class="info">
                                 <h3>Daily Abs</h3>
                                 <p>Abs</p>                      
@@ -258,7 +265,7 @@
                         </div>
         
                         <div class="workout">
-                            <iframe width="160" height="100" src="https://www.youtube.com/embed/cSLU3msDWxQ?si=s-3jx9pgkKgfYK67" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+                            <iframe width="260" height="150" src="https://www.youtube.com/embed/cSLU3msDWxQ?si=s-3jx9pgkKgfYK67" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
                             <div class="info">
                                 <h3>Cooldown & Stretch Routine</h3>
                                 <p>Cooldown</p>          
@@ -294,6 +301,7 @@
                         <li><a href="">About Us</a></li>
                     
                 </div>
+             
                 <div class="footer-right">
                     <h3>Get Started</h3>
                     
@@ -305,7 +313,7 @@
                 </div>
             </div>
         </div>
-        <hr class="width">
+        <hr class="width short">
         <p class="copyright">All right reserved @Fitness 2024</p>
     </footer>
 
@@ -313,9 +321,6 @@
   
  
  
-
-
-
 
 
 

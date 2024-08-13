@@ -1,10 +1,10 @@
-*{
+/* *{
     border: 1px solid red;
   }
    
-  body{
-    border: 2px dashed green;
-  }
+body {
+  border: 2px dashed green;
+} */
 body {
   font-family: "Inter";
   margin: 0;
@@ -15,7 +15,11 @@ body {
   /* max-width: 1440px; */
   /* margin: 0 auto; */
 }
-.ham{
+
+.ham {
+  display: none;
+}
+.banner-image {
   display: none;
 }
 .width {
@@ -29,7 +33,7 @@ section {
 .title {
   color: rgb(255, 255, 255);
 
-  font-size: 48px;
+  font-size: 62px;
   font-weight: 900;
 }
 h2 {
@@ -39,22 +43,31 @@ h2 {
 p {
   color: rgba(255, 255, 255, 0.5);
 
-  font-size: 14px;
+  font-size: 20px;
   font-weight: 400;
 }
 
 /*-------------  nav style starts from here  ----------------- */
+header {
+  margin-top: 50px;
+  background: linear-gradient(#111111, rgba(49, 47, 47, 0.5), black);
+}
 nav {
   /* border: 2px solid red; */
   display: flex;
   justify-content: space-between;
   align-items: center;
-  margin-top: 3.5rem;
+  /* margin-top: 3.5rem; */
 }
 .logo {
+  /* border: 2px solid red; */
   color: rgb(230, 83, 60);
-  font-size: 36px;
+  font-size: 48px;
   font-weight: 800;
+}
+.nav-items {
+  /* border: 2px solid red; */
+  width: 43%;
 }
 .nav-links {
   list-style: none;
@@ -74,15 +87,15 @@ nav {
 .nav-links a {
   /* border: 2px solid red; */
   text-decoration: none;
-  padding: 4px 0;
+  padding: 13px 0;
   margin: 0px 10px;
   display: block;
   color: rgb(255, 255, 255);
-  font-size: 18px;
-  font-weight: 400;
+  font-size: 24px;
+  font-weight: 300;
 }
 .nav-links a.home {
-  padding: 8px 20px 8px 20px;
+  padding: 13px 30px;
   border-radius: 2.8rem;
   background: rgb(230, 83, 60);
   margin: 3px;
@@ -90,67 +103,80 @@ nav {
   margin-right: 47px;
 }
 .nav-links a.abt {
-  padding: 8px 20px 8px 20px;
+  padding: 13px 20px;
 }
 
 /*-------------  nav style ends here  ----------------- */
 
 /*-------------  banner style starts from here  ----------------- */
-
+.banner-container {
+  border: 0.001px dotted rgba(17, 17, 17, 0.5);
+}
 .banner {
-  /* border: 5px solid blue; */
+  border: 0.001px dotted rgba(17, 17, 17, 0.5);
+
   text-align: center;
   padding-top: 32px;
   border-radius: 10px;
+  width: 75%;
+  margin: 0 auto;
 
-  background: linear-gradient(
-    #111111,
-    rgba(46, 44, 44, 0.5),
-    black
-  );
+  background-image: url(./images/Images\ 2.png);
+  background-repeat: no-repeat;
+  background-position: bottom right;
+  background-size: 34%;
 }
-.banner-content {
-  padding: 0;
-  display: flex;
-  text-align: left;
-  justify-content: space-around;
-}
+
 .banner-content-text {
-  /* border: 2px solid red; */
+  /* border: 2px solid rgb(255, 0, 170); */
+  text-align: left;
   margin-top: 64px;
   margin-bottom: 76px;
+  width: 50%;
+}
+.banner-content-text p {
+  margin-bottom: 30px;
 }
 .banner h1 {
   /* border: 2px solid red; */
   margin: 0;
   padding: 0;
-  margin-bottom: 30px;
+
   color: rgb(255, 255, 255);
-  font-size: 78px;
+  font-size: 98px;
   font-weight: 900;
 }
 
-.banner h1 span {
-  font-style: italic;
-  font-weight: 200;
+.h1-first {
+  position: relative;
+  bottom: -60px;
 }
-
+.different-font {
+  font-family: "Miama";
+  font-weight: 400;
+  font-size: 200px;
+  position: relative;
+  z-index: 1;
+}
+.normal {
+  position: relative;
+  top: -100px;
+  z-index: 0;
+}
 .banner p {
   /* border: 2px solid red; */
-  /* margin: 28px 0; */
+  margin-top: 0;
   color: rgba(255, 255, 255, 0.5);
-  font-size: 16px;
+  font-size: 24px;
   font-weight: 400;
   text-align: left;
-  margin-bottom: 30px;
+  /* margin-bottom: 30px; */
 }
 
 .banner-buttons {
   /* border: 2px solid red; */
-  /* margin-bottom: 30px; */
-  margin-bottom: 0;
 
-  padding: 16px;
+  padding: 16px 0;
 }
 
 .banner-buttons .btn {
@@ -159,9 +185,9 @@ nav {
   border-radius: 42px;
   background: rgb(230, 83, 60);
   color: rgb(255, 255, 255);
-  font-size: 18px;
+  font-size: 22px;
   font-weight: 600;
-  padding: 16px 47px;
+  padding: 22px 60px;
 }
 
 .banner-buttons .dwn {
@@ -170,59 +196,64 @@ nav {
   background-color: #111111;
   margin-left: 10px;
 }
-.banner-image {
-  /* border: 2px solid red; */
-  margin-left: 170px;
-  margin-right: 24px;
-}
-/* .box {
+
+.box {
   position: absolute;
 
-  padding: 0 20px;
+  padding: 15px 20px 0 20px;
   border-radius: 12px;
   color: white;
-  font-size: 1.2em;
+
   text-align: center;
   display: flex;
   align-items: center;
+  justify-content: center;
   border: 1px solid rgba(255, 255, 255, 0.1);
 }
-
+.box p {
+  font-size: 1.5em;
+  font-weight: 300;
+}
 .top-right {
-  top: 22%;
-  right: 18%;
+  top: 30%;
+  right: 7%;
   background: rgba(255, 255, 255, 0.1);
   background-blend-mode: overlay;
+  align-items: center;
 }
 
 .bottom-left {
-  bottom: 35%;
-  left: 53%;
-  flex-direction: row;
+  bottom: 12%;
+  left: 56%;
 
-  backdrop-filter: blur(20px);
   background: rgba(48, 48, 48, 0.54);
 }
 
 .circle {
-  width: 40px;
-  height: 40px;
+  width: 50px;
+  height: 50px;
   background: rgb(230, 83, 60);
   border-radius: 100%;
   margin-right: 10px;
+  margin-bottom: 19px;
 }
-
+.trianle {
+  font-size: 34px;
+  margin-left: 10px;
+  margin-top: 10px;
+}
 .three {
-  font-size: 1.5em;
-  font-weight: bold;
+  font-size: 1.8em;
+
+  font-weight: 700;
   color: rgb(255, 255, 255);
 }
 .five {
   color: rgb(255, 255, 255);
   font-family: Inter;
-  font-size: 40px;
+  font-size: 2.5em;
   font-weight: 900;
-} */
+}
 
 /*-------------  banner style ends here  ----------------- */
 
@@ -233,18 +264,28 @@ nav {
   text-align: center;
   margin-bottom: 100px;
 }
+.habit-text {
+  padding: 0 290px;
+}
 .habit-list {
   /* border: 2px solid red; */
   display: flex;
   gap: 40px;
   margin-top: 50px;
 }
-.habit {
-  /* border: 2px solid red; */
-  gap: 40px;
+.habit h3 {
+  margin: 0;
+  margin-top: 30px;
+  font-size: 28px;
+  font-weight: 600;
+}
+.habit p {
+  margin: 0;
+  margin: 10px;
 }
 .habit img {
-  border-radius: 100px;
+  border-radius: 150px;
+  width: 80%;
 }
 
 /*-------------  habit style ends here  ----------------- */
@@ -253,7 +294,9 @@ nav {
 .mile {
   /* border: 2px solid red; */
   display: grid;
-  grid-template-columns: repeat(2, 1fr);
+  grid-template-columns: 650px 100px 300px;
+  /* display: flex;
+  justify-content: space-between; */
   border-radius: 18px;
 
   background: rgb(34, 34, 34);
@@ -262,13 +305,14 @@ nav {
 
 .mile-image img {
   /* border: 2px solid red; */
-  max-width: 366px;
-  height: 312px;
+  max-width: 466px;
+  height: 370px;
+
   border-radius: 18px;
   margin: 30px;
   margin-left: 165px;
   object-fit: none;
-  object-position: 66% 30%;
+  object-position: 68% 33%;
 }
 
 .second-btn {
@@ -277,27 +321,27 @@ nav {
   border-radius: 42px;
   background: rgb(230, 83, 60);
   color: rgb(255, 255, 255);
-  font-size: 18px;
+  font-size: 23px;
   font-weight: 600;
-  padding: 16px 72px;
-  margin-top: 34px;
+  padding: 16px 82px;
+  margin-top: 64px;
 }
 .mile-content {
-  /* margin: 40px 0 40px 54px; */
   /* border: 2px solid red; */
   margin-top: 40px;
-  margin-left: 50px;
+  margin-left: 80px;
   margin-bottom: 40px;
 }
 .mile-content p {
   margin-top: 14px;
-  margin-bottom: 34px;
+  margin-bottom: 58px;
 }
 .mile-content h2 {
   color: rgb(255, 255, 255);
   font-family: Inter;
-  font-size: 48px;
+  font-size: 65px;
   font-weight: 900;
+  padding-right: 100px;
 }
 
 /*-------------  mile style ends here  ----------------- */
@@ -312,7 +356,7 @@ nav {
 
 .bmi-contents {
   /* border: 2px solid red; */
-justify-content: center;
+  justify-content: center;
   text-align: left;
   align-items: center;
   margin-bottom: 88px;
@@ -331,13 +375,13 @@ justify-content: center;
 }
 .bmi-container {
   /* border: 2px solid red; */
-  /* display: flex;
-  justify-content: space-between; */
-  display: grid;
-  grid-template-columns: repeat(2, 1fr);
+  display: flex;
+  justify-content: space-between;
+  /* display: grid;
+  grid-template-columns: repeat(2, 1fr); */
   background: rgb(34, 34, 34);
- 
-  padding-bottom: 50px ;
+  /* width: 70%; */
+  padding-bottom: 50px;
 }
 
 .bmi-calculator {
@@ -348,6 +392,8 @@ justify-content: center;
   display: grid;
   grid-template-columns: repeat(2, 1fr);
   gap: 10px;
+
+  /* max-width: 0px; */
 }
 .bmi-form input,
 .bmi-form select {
@@ -361,6 +407,7 @@ justify-content: center;
   font-size: 16px;
   font-weight: 400;
 }
+
 .bmi-form option {
   color: white;
   background: rgba(0, 0, 0, 0.726);
@@ -382,6 +429,7 @@ justify-content: center;
 
 table {
   border-collapse: collapse;
+  width: 120%;
 }
 
 table,
@@ -417,12 +465,16 @@ td {
   text-align: center;
   margin-bottom: 100px;
 }
-.team-container h2{
+.team-container h2 {
   color: rgb(255, 255, 255);
-  
-  font-size: 48px;
+
+  font-size: 65px;
   font-weight: 900;
-} 
+}
+.team-container p {
+  /* border: 2px solid red; */
+  margin: 20px 250px 60px;
+}
 .team-list {
   /* border: 2px solid white; */
   display: grid;
@@ -430,7 +482,8 @@ td {
   gap: 20px;
   padding: 20px;
   border-radius: 18px;
-  background: rgba(255, 255, 255, 0.1);
+  background: rgba(255, 255, 255, 0.082);
+
   margin-top: 50px;
 }
 
@@ -441,15 +494,14 @@ td {
   object-fit: cover;
   border-radius: 18px;
   border-radius: 18px;
-  background-color: rgba(0, 0, 0, 0.3);
-  background-blend-mode: overlay;
 }
 .team-member {
   position: relative;
   overflow: hidden;
   text-align: left;
-  max-width: 350px;
-  height: 300px;
+  /* max-width: 350px; */
+  height: 350px;
+  z-index: 0;
 }
 
 .team-member h3,
@@ -462,7 +514,7 @@ td {
 .team-member h3 {
   bottom: 35px;
   color: rgb(255, 255, 255);
-  font-size: 20px;
+  font-size: 25px;
   font-weight: 900;
 }
 
@@ -486,11 +538,13 @@ td {
 }
 .workout-content h2 {
   color: rgb(255, 255, 255);
-  font-family: Inter;
-  font-size: 48px;
+  font-size: 65px;
   font-weight: 900;
 }
-
+.workout-content p {
+  /* border: 2px solid red; */
+  margin: 20px 250px 60px;
+}
 .day-container {
   /* border: 1px solid #ddd; */
   display: flex;
@@ -506,7 +560,8 @@ td {
   border: 1px solid #a57c7c;
   padding: 30px;
   border-radius: 20px;
-
+  font-size: 20px;
+  font-weight: 600;
   cursor: pointer;
   color: white;
 }
@@ -538,9 +593,9 @@ td {
   align-items: center;
 }
 .completed h2 {
-  color: wheat;
-  font-family: Inter;
-  font-size: 30px;
+  color: white;
+  font-family: "Miama";
+  font-size: 35px;
   font-weight: 600;
 }
 
@@ -549,19 +604,21 @@ td {
   display: grid;
   grid-template-columns: repeat(2, 1fr);
   background: rgb(34, 34, 34);
-  gap: 30px;
-  padding: 30px;
+  gap: 40px;
+  padding: 40px;
 }
 
 .workout {
-  /* border: 2px solid rgb(32, 194, 17); */
+  /* border: 2px solid rgb(29, 17, 194); */
   display: flex;
   align-items: center;
-  padding: 20px 40px;
+  padding: 30px 40px;
   border-radius: 30px;
   background-color: #111111;
 }
-
+iframe {
+  border-radius: 20px;
+}
 .workout:hover {
   background-color: black;
 }
@@ -572,6 +629,7 @@ td {
 
 .workout .info h3 {
   margin: 0;
+  font-size: 28px;
 }
 
 .workout .info p {
@@ -581,22 +639,22 @@ td {
 
 /*-------------  workout style ends here  ----------------- */
 
-
 /*-------------  footer style starts from here  ----------------- */
 footer {
-  background: rgba(255, 255, 255, 0.1);
+  background: rgba(34, 34, 34, 1);
 }
 footer h3 {
   color: rgb(255, 255, 255);
   font-family: Inter;
-  font-size: 32px;
+  font-size: 45px;
   font-weight: 700;
   margin: 0;
 }
 .footer-container {
   /* border: 2px solid red; */
-  margin: 0, auto;
-
+  margin: 0 auto;
+  margin-bottom: 70px;
+  padding-top: 66px;
   display: grid;
   grid-template-columns: repeat(2, 1fr);
 }
@@ -609,16 +667,16 @@ footer h3 {
   padding: 0;
   color: rgb(230, 83, 60);
   font-family: Inter;
-  font-size: 70px;
+  font-size: 90px;
   font-weight: 800;
   margin-right: 290px;
 }
 .footer-left p {
   color: rgba(255, 255, 255, 0.5);
   font-family: Inter;
-  font-size: 14px;
-  font-weight: 400;
-  margin-right: 100px;
+  font-size: 24px;
+  font-weight: 300;
+  margin-right: 200px;
 }
 .footer-content {
   display: flex;
@@ -629,7 +687,7 @@ footer h3 {
   text-decoration: none;
   color: rgba(255, 255, 255, 0.5);
   font-family: Inter;
-  font-size: 20px;
+  font-size: 28px;
   font-weight: 400;
 }
 hr {
@@ -645,161 +703,270 @@ hr {
 }
 /*-------------  footer style ends here  ----------------- */
 
-
-
-
-
 /* -----------------------------    mobile  ----------------------------------------------------------- */
 
-
-
 @media screen and (max-width: 576px) {
-  body{
-    max-width: 353px;;
-    }
-  p{
-    font-size: 10px;
+  body {
+    width: 96%;
+    margin: 0 auto;
   }
-  .width{
+  .title {
+    color: rgb(255, 255, 255);
+
+    font-size: 32px;
+    font-weight: 900;
+  }
+  p {
+    font-size: 15px;
+  }
+  .width {
     width: 100%;
   }
-  .nav-links{
+  .nav-items {
+    width: 7%;
+  }
+  .nav-links {
     display: none;
   }
-  .ham{
+  .ham {
     display: block;
   }
-  .ham i{
-    width: 24px;
-  }
 
-  .banner-content{
-   
-      padding: 0;
-     flex-direction: column;
-      text-align: left;
- 
-    
+  .banner-content {
+    padding: 0;
+    flex-direction: column;
+    text-align: left;
   }
-  .banner-content-text h1{
-    font-family: Inter;
-font-size: 36px;
-font-weight: 900;
+  .banner {
+    width: 100%;
+    background: none;
+    background-size: 100%;
+    background-position: bottom left;
   }
   .banner-image {
+    display: block;
+  }
+  .banner-image img {
+    width: 100%;
+  }
+  .banner-content-text {
+    width: 100%;
+  }
+  .banner-content-text h1 {
+    font-family: Inter;
+    font-size: 36px;
+    font-weight: 900;
+  }
+  .banner p {
+    font-size: 16px;
+  }
+  .h1-first {
+    bottom: -25px;
+  }
+  .different-font {
+    font-size: 80px;
+  }
+  .normal {
+    top: -35px;
+  }
+  .banner-content-text p {
+    margin-right: 50px;
+  }
+  .box {
+    /* padding-top: 25px; */
+  }
+  .box p {
+    font-size: 0.6rem;
+    font-weight: 300;
+  }
+  .top-right {
+    top: 87%;
+    right: 12%;
+  }
+
+  .bottom-left {
+    bottom: -30%;
+    left: 8%;
+  }
+
+  .circle {
+    width: 30px;
+    height: 30px;
+  }
+  .trianle {
+    font-size: 14px;
+    margin: 0;
+    margin-left: 5px;
+    margin-top: 15px;
+  }
+  .three {
+    font-size: 1.1rem;
+
+    font-weight: 700;
+    color: rgb(255, 255, 255);
+  }
+  .five {
+    color: rgb(255, 255, 255);
+    font-family: Inter;
+    font-size: 1.7rem;
+    font-weight: 900;
+  }
+
+  .banner-buttons .btn {
+    font-size: 15px;
+    font-weight: 600;
+    padding: 15px;
+  }
+
+  .habit-text {
+    padding: 0 40px;
+  }
+
+  .habit h3 {
+    margin: 0;
+    margin-top: 30px;
+    font-size: 18px;
+    font-weight: 600;
+  }
+  .habit p {
     /* border: 2px solid red; */
-    width: 50%;
-    margin-left: 0;
-    margin-right: 0;
+    margin: 0;
+    padding: 0 40px;
+    margin: 0 60px;
   }
-  .banner-image img{
-    width: 200%;
-    object-fit: none;
-  object-position: 76% 40%;
-  }
-
-
-
-
-
-
-
-
-
-
-
   .habit-list {
     /* border: 2px solid red; */
     flex-direction: column;
-  
+  }
+
+  .habit img {
+    border-radius: 100px;
+    width: 50%;
   }
 
   .mile {
     /* border: 2px solid red; */
     display: flex;
     flex-direction: column;
-    border-radius: 18px;
-  
-    background: rgb(34, 34, 34);
-    margin-bottom: 100px;
   }
 
   .mile-image img {
-   
-    max-width: 287px;
-    border-radius: 18px;
-   
-    margin-left: 0;
-    object-fit: cover;
-  
+    max-width: 80%;
+    height: 50%;
+    align-items: center;
+    margin-left: 40px;
+    margin-top: 0;
+    object-fit: contain;
+  }
+  .mile-content {
+    margin: 0;
+
+    padding: 40px;
+  }
+  .mile-content h2 {
+    font-size: 35px;
+  }
+
+  .second-btn {
+    padding: 16px 109px;
   }
 
   .bmi-container {
-    
     display: flex;
     flex-direction: column;
-   
   }
   .bmi-contents {
     /* border: 2px solid red; */
-  justify-content: center;
+    justify-content: center;
     text-align: left;
     align-items: center;
     margin-bottom: 88px;
     padding-left: 0;
   }
- 
+
   .bmi-form {
- max-width: 353px;
-   
+    width: 50%;
+  }
+  table {
+    border-collapse: collapse;
+    width: 100%;
   }
   .bmi-calculator {
     /* border: 5px solid wheat; */
-   
+  }
+  .bmi-form .btn {
+    border-radius: 40px;
+    border: none;
+    background: rgb(230, 83, 60);
+    color: rgb(255, 255, 255);
+    font-family: Inter;
+    font-weight: 600;
+    font-size: 18px;
+    padding: 16px 40px;
+    margin-right: 70px;
+  }
+
+  .team-container {
+    width: 90%;
   }
   .team-list {
-    /* border: 2px solid white; */
-    display: grid;
     grid-template-columns: repeat(1, 1fr);
-    gap: 20px;
-    padding: 20px;
-    border-radius: 18px;
-    background: rgba(255, 255, 255, 0.1);
-    margin-top: 50px;
   }
+  .team-container h2 {
+    margin: 5px 20px;
+    font-size: 40px;
+  }
+  .team-container p {
+    margin: 10px 20px;
+  }
+
+  .team-member h3 {
+    font-size: 20px;
+  }
+
   .workouts-container {
-    /* border: 2px solid rgba(35, 17, 194, 0.822); */
-    display: grid;
     grid-template-columns: repeat(1, 1fr);
-    background: rgb(34, 34, 34);
+
     gap: 30px;
-    padding: 30px;
+    padding: 20px;
   }
-  .day-hide{
+  .workout-content h2 {
+    font-size: 37px;
+    margin: 5px 15px;
+  }
+  .workout-content p {
+    margin: 5px 25px;
+  }
+  .day-hide {
     display: none;
   }
   .workout {
     /* border: 2px solid rgb(32, 194, 17); */
-    display: flex;
+
     flex-direction: column;
-    align-items: center;
+
     padding: 20px 40px;
     border-radius: 30px;
-    background-color: #111111;
   }
   .completed {
     /* border: solid rgb(238, 228, 228); */
-    padding: 10px 35px;
-    display: flex;
+
     flex-direction: column;
-    justify-content: space-between;
-    align-items: center;
+  }
+
+  .day-container .day {
+    padding: 18px;
+
+    font-size: 15px;
+  }
+  .completed h2 {
+    font-size: 20px;
   }
 
   .footer-container {
     /* border: 2px solid red; */
-    margin: 0, auto;
-  
+    width: 90%;
+
     display: grid;
     grid-template-columns: repeat(1, 1fr);
   }
@@ -808,20 +975,34 @@ font-weight: 900;
     flex-direction: column;
     justify-content: space-between;
   }
-  /* footer h3 {
-    color: rgb(255, 255, 255);
-    font-family: Inter;
-    font-size: 12px;
-    font-weight: 700;
-    margin: 0;
-  } */
+  footer h3 {
+    font-size: 35px;
+  }
+  .footer-middle a,
+  .footer-right a {
+    font-size: 20px;
+    font-weight: 400;
+  }
+
   .footer-left h1 {
     margin: 0;
     padding: 0;
-    color: rgb(230, 83, 60);
-    font-family: Inter;
+
     font-size: 70px;
-    font-weight: 800;
-    margin-right: 0px;
+
+    margin-right: 0;
+  }
+  .footer-left p {
+    font-size: 16px;
+
+    margin-right: 20px;
+  }
+
+  hr.short {
+    width: 90%;
+    margin: 0 auto;
+  }
+  .copyright {
+    font-size: 22px;
   }
 }
