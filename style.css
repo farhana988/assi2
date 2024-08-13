@@ -32,7 +32,6 @@ section {
 }
 .title {
   color: rgb(255, 255, 255);
-
   font-size: 62px;
   font-weight: 900;
 }
@@ -42,7 +41,6 @@ h2 {
 }
 p {
   color: rgba(255, 255, 255, 0.5);
-
   font-size: 20px;
   font-weight: 400;
 }
@@ -57,7 +55,6 @@ nav {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  /* margin-top: 3.5rem; */
 }
 .logo {
   /* border: 2px solid red; */
@@ -114,13 +111,11 @@ nav {
 }
 .banner {
   border: 0.001px dotted rgba(17, 17, 17, 0.5);
-
   text-align: center;
   padding-top: 32px;
   border-radius: 10px;
   width: 75%;
   margin: 0 auto;
-
   background-image: url(./images/Images\ 2.png);
   background-repeat: no-repeat;
   background-position: bottom right;
@@ -141,7 +136,6 @@ nav {
   /* border: 2px solid red; */
   margin: 0;
   padding: 0;
-
   color: rgb(255, 255, 255);
   font-size: 98px;
   font-weight: 900;
@@ -170,12 +164,10 @@ nav {
   font-size: 24px;
   font-weight: 400;
   text-align: left;
-  /* margin-bottom: 30px; */
 }
 
 .banner-buttons {
   /* border: 2px solid red; */
-
   padding: 16px 0;
 }
 
@@ -199,11 +191,9 @@ nav {
 
 .box {
   position: absolute;
-
   padding: 15px 20px 0 20px;
   border-radius: 12px;
   color: white;
-
   text-align: center;
   display: flex;
   align-items: center;
@@ -225,7 +215,6 @@ nav {
 .bottom-left {
   bottom: 12%;
   left: 56%;
-
   background: rgba(48, 48, 48, 0.54);
 }
 
@@ -244,13 +233,11 @@ nav {
 }
 .three {
   font-size: 1.8em;
-
   font-weight: 700;
   color: rgb(255, 255, 255);
 }
 .five {
   color: rgb(255, 255, 255);
-  font-family: Inter;
   font-size: 2.5em;
   font-weight: 900;
 }
@@ -298,7 +285,6 @@ nav {
   /* display: flex;
   justify-content: space-between; */
   border-radius: 18px;
-
   background: rgb(34, 34, 34);
   margin-bottom: 100px;
 }
@@ -307,7 +293,6 @@ nav {
   /* border: 2px solid red; */
   max-width: 466px;
   height: 370px;
-
   border-radius: 18px;
   margin: 30px;
   margin-left: 165px;
@@ -338,7 +323,6 @@ nav {
 }
 .mile-content h2 {
   color: rgb(255, 255, 255);
-  font-family: Inter;
   font-size: 65px;
   font-weight: 900;
   padding-right: 100px;
@@ -369,7 +353,6 @@ nav {
 
 .bmi-container h3 {
   color: rgb(255, 255, 255);
-  font-family: Inter;
   font-size: 28px;
   font-weight: 900;
 }
@@ -384,16 +367,14 @@ nav {
   padding-bottom: 50px;
 }
 
-.bmi-calculator {
-  /* border: 5px solid wheat; */
-}
+/* .bmi-calculator {
+  border: 5px solid wheat;
+} */
 .bmi-form {
   /* border: 9px solid red; */
   display: grid;
   grid-template-columns: repeat(2, 1fr);
   gap: 10px;
-
-  /* max-width: 0px; */
 }
 .bmi-form input,
 .bmi-form select {
@@ -401,9 +382,7 @@ nav {
   border: none;
   border-radius: 8px;
   background: rgba(255, 255, 255, 0.1);
-
   color: rgba(255, 255, 255, 0.6);
-  font-family: Inter;
   font-size: 16px;
   font-weight: 400;
 }
@@ -420,7 +399,6 @@ nav {
   border: none;
   background: rgb(230, 83, 60);
   color: rgb(255, 255, 255);
-  font-family: Inter;
   font-weight: 600;
   font-size: 18px;
   padding: 16px 40px;
@@ -439,13 +417,11 @@ td {
 }
 th {
   color: rgb(255, 255, 255);
-
   font-size: 16px;
   font-weight: 500;
 }
 td {
   color: rgba(255, 255, 255, 0.5);
-
   font-size: 14px;
   font-weight: 400;
 }
@@ -467,7 +443,6 @@ td {
 }
 .team-container h2 {
   color: rgb(255, 255, 255);
-
   font-size: 65px;
   font-weight: 900;
 }
@@ -483,7 +458,6 @@ td {
   padding: 20px;
   border-radius: 18px;
   background: rgba(255, 255, 255, 0.082);
-
   margin-top: 50px;
 }
 
@@ -501,7 +475,6 @@ td {
   text-align: left;
   /* max-width: 350px; */
   height: 350px;
-  z-index: 0;
 }
 
 .team-member h3,
@@ -645,7 +618,6 @@ footer {
 }
 footer h3 {
   color: rgb(255, 255, 255);
-  font-family: Inter;
   font-size: 45px;
   font-weight: 700;
   margin: 0;
@@ -666,14 +638,12 @@ footer h3 {
   margin: 0;
   padding: 0;
   color: rgb(230, 83, 60);
-  font-family: Inter;
   font-size: 90px;
   font-weight: 800;
   margin-right: 290px;
 }
 .footer-left p {
   color: rgba(255, 255, 255, 0.5);
-  font-family: Inter;
   font-size: 24px;
   font-weight: 300;
   margin-right: 200px;
@@ -686,7 +656,6 @@ footer h3 {
 .footer-right a {
   text-decoration: none;
   color: rgba(255, 255, 255, 0.5);
-  font-family: Inter;
   font-size: 28px;
   font-weight: 400;
 }
@@ -696,13 +665,16 @@ hr {
 .copyright {
   text-align: center;
   color: rgba(255, 255, 255, 0.5);
-  font-family: Inter;
   font-size: 20px;
   font-weight: 400;
   padding: 20px;
 }
 /*-------------  footer style ends here  ----------------- */
-
+/* -- */
+/*  */
+/* // */
+/*   */
+/*  */
 /* -----------------------------    mobile  ----------------------------------------------------------- */
 
 @media screen and (max-width: 576px) {
@@ -722,6 +694,7 @@ hr {
   .width {
     width: 100%;
   }
+  /* ---------------     nav    --------------------------            */
   .nav-items {
     width: 7%;
   }
@@ -731,7 +704,7 @@ hr {
   .ham {
     display: block;
   }
-
+  /* ---------------     banner    --------------------------            */
   .banner-content {
     padding: 0;
     flex-direction: column;
@@ -753,7 +726,7 @@ hr {
     width: 100%;
   }
   .banner-content-text h1 {
-    font-family: Inter;
+
     font-size: 36px;
     font-weight: 900;
   }
@@ -807,7 +780,7 @@ hr {
   }
   .five {
     color: rgb(255, 255, 255);
-    font-family: Inter;
+
     font-size: 1.7rem;
     font-weight: 900;
   }
@@ -817,7 +790,7 @@ hr {
     font-weight: 600;
     padding: 15px;
   }
-
+  /* ---------------     habit    --------------------------            */
   .habit-text {
     padding: 0 40px;
   }
@@ -844,8 +817,9 @@ hr {
     width: 50%;
   }
 
+  /* ---------------     mile    --------------------------            */
+
   .mile {
-    /* border: 2px solid red; */
     display: flex;
     flex-direction: column;
   }
@@ -870,6 +844,8 @@ hr {
   .second-btn {
     padding: 16px 109px;
   }
+
+  /* ---------------     bmi    --------------------------            */
 
   .bmi-container {
     display: flex;
@@ -899,13 +875,13 @@ hr {
     border: none;
     background: rgb(230, 83, 60);
     color: rgb(255, 255, 255);
-    font-family: Inter;
+
     font-weight: 600;
     font-size: 18px;
     padding: 16px 40px;
     margin-right: 70px;
   }
-
+  /* ---------------     team    --------------------------            */
   .team-container {
     width: 90%;
   }
@@ -919,14 +895,15 @@ hr {
   .team-container p {
     margin: 10px 20px;
   }
-
+  .team-member {
+    height: 270px;
+  }
   .team-member h3 {
     font-size: 20px;
   }
-
+  /* ---------------     workout    --------------------------            */
   .workouts-container {
     grid-template-columns: repeat(1, 1fr);
-
     gap: 30px;
     padding: 20px;
   }
@@ -941,32 +918,24 @@ hr {
     display: none;
   }
   .workout {
-    /* border: 2px solid rgb(32, 194, 17); */
-
     flex-direction: column;
-
     padding: 20px 40px;
     border-radius: 30px;
   }
   .completed {
-    /* border: solid rgb(238, 228, 228); */
-
     flex-direction: column;
   }
 
   .day-container .day {
     padding: 18px;
-
     font-size: 15px;
   }
   .completed h2 {
     font-size: 20px;
   }
-
+  /* ---------------     footer    --------------------------            */
   .footer-container {
-    /* border: 2px solid red; */
     width: 90%;
-
     display: grid;
     grid-template-columns: repeat(1, 1fr);
   }
@@ -994,7 +963,6 @@ hr {
   }
   .footer-left p {
     font-size: 16px;
-
     margin-right: 20px;
   }
 
