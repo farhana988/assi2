@@ -10,10 +10,10 @@ body {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-  background-color: #111111;
+  background-color: black;
   color: #ffffff;
-  /* max-width: 1440px; */
-  /* margin: 0 auto; */
+  max-width: 100%;
+  margin: 0 auto;
 }
 
 .ham {
@@ -201,21 +201,25 @@ nav {
   border: 1px solid rgba(255, 255, 255, 0.1);
 }
 .box p {
-  font-size: 1.5em;
-  font-weight: 300;
+  font-size: 1.4em;
+  font-weight: 400;
 }
 .top-right {
-  top: 30%;
+  top: 37%;
   right: 7%;
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  backdrop-filter: blur(20px);
   background: rgba(255, 255, 255, 0.1);
-  background-blend-mode: overlay;
   align-items: center;
 }
 
 .bottom-left {
-  bottom: 12%;
+  bottom: 8%;
   left: 56%;
-  background: rgba(48, 48, 48, 0.54);
+border: 1px solid rgba(255, 255, 255, 0.1);
+
+backdrop-filter: blur(20px);
+background: rgba(48, 48, 48, 0.54);
 }
 
 .circle {
@@ -251,6 +255,9 @@ nav {
   text-align: center;
   margin-bottom: 100px;
 }
+.habit{
+  
+}
 .habit-text {
   padding: 0 290px;
 }
@@ -273,6 +280,8 @@ nav {
 .habit img {
   border-radius: 150px;
   width: 80%;
+  border: 4px solid rgba(255, 255, 255, 0.1);
+
 }
 
 /*-------------  habit style ends here  ----------------- */
@@ -353,61 +362,85 @@ nav {
 
 .bmi-container h3 {
   color: rgb(255, 255, 255);
-  font-size: 28px;
+  font-size: 38px;
   font-weight: 900;
 }
 .bmi-container {
   /* border: 2px solid red; */
-  display: flex;
-  justify-content: space-between;
-  /* display: grid;
-  grid-template-columns: repeat(2, 1fr); */
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
   background: rgb(34, 34, 34);
-  /* width: 70%; */
   padding-bottom: 50px;
+  padding-top: 40px;
 }
 
 /* .bmi-calculator {
   border: 5px solid wheat;
+
 } */
 .bmi-form {
   /* border: 9px solid red; */
-  display: grid;
+  /* display: grid;
   grid-template-columns: repeat(2, 1fr);
-  gap: 10px;
+  gap: 15px;
+  margin-top: 50px; */
+}
+.bmi-form .slice {
+  display: flex;
+  justify-content: space-between;
+  gap: 20px;
+  margin-bottom: 20px;
 }
 .bmi-form input,
 .bmi-form select {
-  padding: 12px 40px 12px 20px;
+  /* padding: 12px 40px 12px 20px; */
+  width: 100%;
+  padding: 20px 0 20px 20px;
   border: none;
   border-radius: 8px;
   background: rgba(255, 255, 255, 0.1);
   color: rgba(255, 255, 255, 0.6);
-  font-size: 16px;
+  font-size: 22px;
   font-weight: 400;
 }
-
+::placeholder {
+  color: rgba(255, 255, 255, 0.6);
+}
 .bmi-form option {
   color: white;
   background: rgba(0, 0, 0, 0.726);
 }
-.bmi-form .full-width {
-  grid-column: span 2;
-}
+/* .bmi-form .full-width {
+  flex-direction: column;
+} */
+
+/* 
+.select-arrow{
+
+    border: solid rgb(238, 228, 228);
+    border-width: 0 3px 3px 0;
+    display: inline-block;
+    padding: 3px;
+    transform: rotate(-90deg);
+    -webkit-transform: rotate(-90deg);
+  
+} */
 .bmi-form .btn {
   border-radius: 40px;
   border: none;
   background: rgb(230, 83, 60);
   color: rgb(255, 255, 255);
   font-weight: 600;
-  font-size: 18px;
-  padding: 16px 40px;
-  margin-right: 70px;
+  font-size: 22px;
+  padding: 18px 80px;
+ 
+  margin-top: 30px;
 }
 
 table {
+  margin-top: 60px;
   border-collapse: collapse;
-  width: 120%;
+  width: 60%;
 }
 
 table,
@@ -417,18 +450,18 @@ td {
 }
 th {
   color: rgb(255, 255, 255);
-  font-size: 16px;
+  font-size: 22px;
   font-weight: 500;
 }
 td {
   color: rgba(255, 255, 255, 0.5);
-  font-size: 14px;
+  font-size: 20px;
   font-weight: 400;
 }
 
 th,
 td {
-  padding: 15px;
+  padding: 19px;
   text-align: left;
 }
 
@@ -466,7 +499,6 @@ td {
   width: 100%;
   height: 100%;
   object-fit: cover;
-  border-radius: 18px;
   border-radius: 18px;
 }
 .team-member {
@@ -665,7 +697,7 @@ hr {
 .copyright {
   text-align: center;
   color: rgba(255, 255, 255, 0.5);
-  font-size: 20px;
+  font-size: 25px;
   font-weight: 400;
   padding: 20px;
 }
@@ -679,7 +711,7 @@ hr {
 
 @media screen and (max-width: 576px) {
   body {
-    width: 96%;
+    width: 100%;
     margin: 0 auto;
   }
   .title {
@@ -692,7 +724,7 @@ hr {
     font-size: 15px;
   }
   .width {
-    width: 100%;
+    width: 90%;
   }
   /* ---------------     nav    --------------------------            */
   .nav-items {
@@ -711,7 +743,6 @@ hr {
     text-align: left;
   }
   .banner {
-    width: 100%;
     background: none;
     background-size: 100%;
     background-position: bottom left;
@@ -723,10 +754,10 @@ hr {
     width: 100%;
   }
   .banner-content-text {
+    margin: 0;
     width: 100%;
   }
   .banner-content-text h1 {
-
     font-size: 36px;
     font-weight: 900;
   }
@@ -749,17 +780,17 @@ hr {
     /* padding-top: 25px; */
   }
   .box p {
-    font-size: 0.6rem;
+    font-size: 0.7rem;
     font-weight: 300;
   }
   .top-right {
-    top: 87%;
+    top: 72%;
     right: 12%;
   }
 
   .bottom-left {
-    bottom: -30%;
-    left: 8%;
+    bottom: -12%;
+    left: 12%;
   }
 
   .circle {
@@ -842,14 +873,22 @@ hr {
   }
 
   .second-btn {
-    padding: 16px 109px;
+    padding: 16px 99px;
   }
 
   /* ---------------     bmi    --------------------------            */
-
+  .bmi {
+    /* background-color: red; */
+    width: 100%;
+  }
   .bmi-container {
     display: flex;
     flex-direction: column;
+  }
+  .bmi-container h3 {
+    color: rgb(255, 255, 255);
+    font-size: 23px;
+    font-weight: 900;
   }
   .bmi-contents {
     /* border: 2px solid red; */
@@ -859,27 +898,35 @@ hr {
     margin-bottom: 88px;
     padding-left: 0;
   }
-
+  /* 
   .bmi-form {
     width: 50%;
-  }
+  } */
+  /* form{
+    width: 10%;
+  } */
   table {
-    border-collapse: collapse;
     width: 100%;
   }
   .bmi-calculator {
     /* border: 5px solid wheat; */
   }
-  .bmi-form .btn {
-    border-radius: 40px;
-    border: none;
-    background: rgb(230, 83, 60);
-    color: rgb(255, 255, 255);
 
-    font-weight: 600;
+  .bmi-form {
+    /* border: 9px solid red; */
+    gap: 10px;
+  }
+  .bmi-form .btn {
     font-size: 18px;
     padding: 16px 40px;
-    margin-right: 70px;
+  }
+
+  .bmi-form input,
+  .bmi-form select {
+    padding: 15px 0 15px 15px;
+
+    font-size: 16px;
+    font-weight: 400;
   }
   /* ---------------     team    --------------------------            */
   .team-container {
@@ -974,3 +1021,5 @@ hr {
     font-size: 22px;
   }
 }
+
+
